@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$dark-color: #2B2626;
+$bright-color: #bada55;
+$font-color: white;
+
+input:focus{ outline: 0 }
+button:focus{ outline: 0 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: $font-color;
+    background-color: $dark-color;
+}
+
+

@@ -1,0 +1,21 @@
+
+@mixin button {
+    padding: 10px 20px;
+    color: $dark-color;
+    background-color: $bright-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid $bright-color;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    &:disabled {
+        opacity: 0.6;
+    }
+}
+
+@mixin wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+}

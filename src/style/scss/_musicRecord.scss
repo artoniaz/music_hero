@@ -1,0 +1,39 @@
+
+.musicRecord {
+    border-style: solid;
+    border-color: $bright-color;
+    border-top-width: 0;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-radius: 50px;
+
+    .musicRecord__songTitle {
+        margin: 5px 0 3px 0;
+    }
+}
+
+.musicRecord__tabTypes {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0 10px 20px;
+
+    .musicRecord__tabType {
+        border: 1px solid $bright-color;
+        padding: 5px 10px;
+        border-radius: 50px;
+        margin-right: 10px;
+        transition: 1s;
+    }
+
+    .musicRecord__tabType--active {
+        background-color: $bright-color;
+        color: $dark-color;
+    }
+}
+
+.musicRecord__tabTypes--mainSearch {
+    justify-content: center;
+    margin: 10px 0;
+
+}

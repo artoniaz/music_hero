@@ -1,0 +1,30 @@
+
+.searchForm {
+    border-bottom: 5px solid $bright-color;
+    padding: 0.5rem;
+
+    .searchForm__title {
+        text-transform: uppercase;
+    }
+    .searchForm__subTitle {
+         font-size: 12px;
+         padding: 5px;
+    }
+    .searchForm__searchInput {
+        padding: 4px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50px;
+        border: 1px solid $dark-color;
+    }
+
+    .searchForm__tabExplanation {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    .searchForm__button {
+        @include button;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
