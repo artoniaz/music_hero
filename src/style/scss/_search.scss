@@ -1,15 +1,19 @@
 
 .searchForm {
+    position: relative;
     border-bottom: 5px solid $bright-color;
     padding: 0.5rem;
+    transition: 0.5s;
 
     .searchForm__title {
         text-transform: uppercase;
     }
+
     .searchForm__subTitle {
-         font-size: 12px;
-         padding: 5px;
+        font-size: 12px;
+        padding: 5px;
     }
+
     .searchForm__searchInput {
         padding: 4px;
         margin: 0 auto;
@@ -22,9 +26,23 @@
         margin-top: 8px;
         font-size: 12px;
     }
+
     .searchForm__button {
         @include button;
         font-size: 10px;
         margin-top: 10px;
     }
 }
+
+.searchForm--mini {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $dark-color;
+    border-color: $font-color;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
+}
+
+

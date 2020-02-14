@@ -4,7 +4,7 @@ import MusicRecord from './MusicRecord';
 
 const Results = props => {
 
-    const { tabValue } = props;
+    const { tabValue, userInput } = props;
 
     const allRecords = props.data.map(record => (
         <MusicRecord key={record.id} recordData={record} activeTab={tabValue}/>
@@ -17,10 +17,10 @@ const Results = props => {
     })
 
     return (
-        <div className='results'>
-            <h1 className='results__title'>Your songs: </h1>
+        <main className='results'>
+            <h1 className='results__title'>You are looking for {userInput}</h1>
             { filteredRecords }
-        </div>
+        </main>
     )
 }
 

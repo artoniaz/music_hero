@@ -11,13 +11,14 @@ class App extends Component {
 
   state = {
     musicData: [],
+    userInput: '',
     tabValue: ''
   }
 
   tabTypes = ['PLAYER', 'TEXT_GUITAR_TAB', 'CHORDS', 'TEXT_BASS_TAB'];
 
-  getMusicData = musicData => {
-    this.setState({ musicData });
+  getMusicData = (musicData, userInput) => {
+    this.setState({ musicData, userInput });
   };
 
   getTabValue = tabValue => {
@@ -34,7 +35,7 @@ class App extends Component {
         <Header className='header' />
         <div className='contentContainer'>
           <Search  getMusicData={this.getMusicData} getTabValue={this.getTabValue} tabTypes={this.tabTypes} />
-          <Results data={this.state.musicData} tabValue={this.state.tabValue} />
+          <Results data={this.state.musicData} tabValue={this.state.tabValue} userInput={this.state.userInput}/>
         </div>
         <Footer className='footer' />
       </div>
