@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Header = () => {
+const Header = props => {
     return (
         <header className='header'>
-            <h1 className="header__title">full guitar tabs database</h1>
+            <h1 className="header__title" onClick={props.resetApp}>full guitar tabs database</h1>
         </header>
     )
 }

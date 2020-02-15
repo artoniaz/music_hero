@@ -1,11 +1,12 @@
 .results {
     position: relative;
+
     .results__title {
-        padding: 20px;
+        padding-bottom: 10px;
     }
 
     .results__primaryTitle {
-        padding: 20px;
+        padding: 10px;
     }
 
     .results__noTabs {
@@ -21,5 +22,26 @@
         background-image: url('../../img/ladyGuitar.png');
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+
+
+    @media (min-width: 600px) and (min-height: 500px) {
+        .results__title {
+            padding-top: 60px;
+        }
+
+        .results__primaryTitle {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-height: 499px) {
+    .results {
+        padding-bottom: 40px;
+        .resutls__img {
+            display: none;
+        }
     }
 }

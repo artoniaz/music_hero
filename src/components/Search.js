@@ -81,19 +81,6 @@ class Search extends Component {
                         </div>}
                 </form>
             </AnimateHeight>
-            // <form className={miniSearch ? 'searchForm searchForm--mini' : 'searchForm'} onSubmit={this.callSearch}>
-            //     {miniSearch ? null : <h2 className='searchForm__title'>search</h2>}
-            //     <p className='searchForm__tabExplanation'>Choose your prefered tab type</p>
-            //     <div className="musicRecord__tabTypes musicRecord__tabTypes--mainSearch">
-            //         {types}
-            //     </div>
-            //     {miniSearch ? null :
-            //         <div>
-            //             <p className='searchForm__subTitle'>Type artist's name or track's title</p>
-            //             <input className='searchForm__searchInput' type="text" placeholder="Leonard Cohen or Hallelujah" onChange={this.handleUserInput} value={this.state.userInput} />
-            //             <button type='submit' className='searchForm__button' disabled={(this.state.userInput && this.state.tabValue) ? false : true}>search</button>
-            //         </div>}
-            // </form>
         )
     }
 }

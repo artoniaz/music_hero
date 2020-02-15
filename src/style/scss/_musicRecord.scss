@@ -33,8 +33,14 @@
     }
 }
 
+@media (min-width: 600px) and (min-height: 500px) {
+    .musicRecord__tabTypes {
+        font-size: 1.4rem;
+    }
+}
+
 .musicRecord__tabTypes--mainSearch {
     justify-content: center;
     margin: 10px 0;
-
+    cursor: pointer;
 }

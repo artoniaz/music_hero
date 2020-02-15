@@ -8,8 +8,13 @@ $dark-color: #2B2626;
 $bright-color: #bada55;
 $font-color: white;
 
-input:focus{ outline: 0 }
-button:focus{ outline: 0 }
+input:focus {
+    outline: 0
+}
+
+button:focus {
+    outline: 0
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,4 +23,8 @@ body {
     background-color: $dark-color;
 }
 
-
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}

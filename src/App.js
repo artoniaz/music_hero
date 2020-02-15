@@ -32,24 +32,39 @@ class App extends Component {
   };
 
   toggleModal = (showModal, modalTitle, modalMessage) => {
-    this.setState({ modal: {
-      show: showModal,
-      title: modalTitle,
-      message: modalMessage
-    } });
+    this.setState({
+      modal: {
+        show: showModal,
+        title: modalTitle,
+        message: modalMessage
+      }
+    });
+  }
+
+  resetApp = () => {
+    this.setState({
+      musicData: [],
+      userInput: '',
+      tabValue: '',
+      modal: {
+        show: false,
+        title: '',
+        message: ''
+      }
+    })
   }
 
   render() {
     return (
-        <div className='mainContainer' >
-          {this.state.modal.show ? <Modal title={this.state.modal.title} message={this.state.modal.message} toggleModal={this.toggleModal} /> : null}
-          <Header />
-          <div className='contentContainer'>
-            <Search getMusicData={this.getMusicData} getTabValue={this.getTabValue} tabTypes={this.tabTypes} toggleModal={this.toggleModal}/>
-            <Results data={this.state.musicData} tabValue={this.state.tabValue} userInput={this.state.userInput} toggleModal={this.toggleModal} />
-          </div>
-          <Footer />
+      <div className='mainContainer' >
+        {this.state.modal.show ? <Modal title={this.state.modal.title} message={this.state.modal.message} toggleModal={this.toggleModal} /> : null}
+        <Header resetApp={this.resetApp} />
+        <div className='contentContainer'>
+          <Search getMusicData={this.getMusicData} getTabValue={this.getTabValue} tabTypes={this.tabTypes} toggleModal={this.toggleModal} />
+          <Results data={this.state.musicData} tabValue={this.state.tabValue} userInput={this.state.userInput} toggleModal={this.toggleModal} />
         </div>
+        <Footer />
+      </div>
     );
   }
 }

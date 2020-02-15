@@ -10,7 +10,7 @@
     }
 
     .searchForm__subTitle {
-        font-size: 12px;
+        font-size: 1rem;
         padding: 5px;
     }
 
@@ -24,13 +24,24 @@
 
     .searchForm__tabExplanation {
         margin-top: 8px;
-        font-size: 12px;
+        font-size: 1rem;
     }
 
     .searchForm__button {
         @include button;
-        font-size: 10px;
         margin-top: 10px;
+    }
+
+    @media (min-width: 600px)and (min-height: 500px) {
+        .searchForm__subTitle {
+            font-size: 1.2rem;
+        }
+        .searchForm__tabExplanation {
+            font-size: 1.2rem;
+        }
+        .searchForm__searchInput {
+            font-size: 1.4rem;
+        }
     }
 }
 

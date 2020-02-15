@@ -1,4 +1,3 @@
-
 @mixin button {
     padding: 10px 20px;
     color: $dark-color;
@@ -9,13 +8,19 @@
     text-decoration: none;
     border-radius: 50px;
     font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+
     &:disabled {
         opacity: 0.6;
+        cursor: auto;
+    }
+
+    @media (min-width: 600px) {
+        font-size: 1rem;
     }
 }
 
 @mixin wrap {
     margin: 0 auto;
     width: 100%;
-    max-width: 1600px;
 }
