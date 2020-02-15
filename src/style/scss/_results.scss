@@ -1,5 +1,25 @@
 .results {
+    position: relative;
     .results__title {
-        margin: 15px 0;
+        padding: 20px;
+    }
+
+    .results__primaryTitle {
+        padding: 20px;
+    }
+
+    .results__noTabs {
+        padding: 15px;
+    }
+
+    .resutls__img {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        width: 50%;
+        height: 50%;
+        background-image: url('../../img/ladyGuitar.png');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AnimateHeight from 'react-animate-height';
 
 import TabType from './TabType';
+
 import musicAPI from '../musicAPI';
 
 class Search extends Component {
@@ -15,7 +16,10 @@ class Search extends Component {
     callSearch = async e => {
         e.preventDefault();
         const musicData = await musicAPI(this.state.userInput);
-
+        if (musicData.length === 0) {
+            this.setState({ userInput: '' });
+            return this.props.toggleModal(true, "We couldn't find what you are looking for.", "Please make sure you typed artist's name or song title correctly.");
+        }
         this.props.getMusicData(musicData, this.state.userInput);
         this.setState({ userInput: '' });
     };
