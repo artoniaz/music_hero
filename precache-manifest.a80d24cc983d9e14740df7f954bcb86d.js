@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09a6b6511b93f84cfdf18805b899c5fd",
+    "revision": "a03d2a655e0af2f71c1da0dd257c2f5d",
     "url": "/music_hero/index.html"
   },
   {
-    "revision": "e5b64bc1775c27f6d246",
-    "url": "/music_hero/static/css/main.4010a562.chunk.css"
+    "revision": "62e18cecebe763f42fff",
+    "url": "/music_hero/static/css/main.6c35f57d.chunk.css"
   },
   {
     "revision": "7c0cbe4d54e1257e880f",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/music_hero/static/js/2.75a6b91b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5b64bc1775c27f6d246",
+    "revision": "62e18cecebe763f42fff",
     "url": "/music_hero/static/js/main.77b0ded3.chunk.js"
   },
   {
