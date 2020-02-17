@@ -16,6 +16,11 @@ class Search extends Component {
     callSearch = async e => {
         e.preventDefault();
         const musicData = await musicAPI(this.state.userInput);
+        
+        if (musicData === undefined) {
+            this.setState({ userInput: '' });
+            return this.props.toggleModal(true, "An error occured", "There are some connection problems. Please try again later.");
+        }
         if (musicData.length === 0) {
             this.setState({ userInput: '' });
             return this.props.toggleModal(true, "We couldn't find what you are looking for.", "Please make sure you typed artist's name or song title correctly.");

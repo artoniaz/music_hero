@@ -2,7 +2,7 @@
   "name": "music_hero",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artoniaz.github.io/music_hero/",
+  "homepage": "https://artoniaz.github.io/music_hero",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
