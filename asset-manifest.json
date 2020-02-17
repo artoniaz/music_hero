@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/music_hero/static/css/main.67d0366d.chunk.css",
+    "main.js": "/music_hero/static/js/main.35889d15.chunk.js",
+    "main.js.map": "/music_hero/static/js/main.35889d15.chunk.js.map",
+    "runtime-main.js": "/music_hero/static/js/runtime-main.71ef662b.js",
+    "runtime-main.js.map": "/music_hero/static/js/runtime-main.71ef662b.js.map",
+    "static/js/2.75a6b91b.chunk.js": "/music_hero/static/js/2.75a6b91b.chunk.js",
+    "static/js/2.75a6b91b.chunk.js.map": "/music_hero/static/js/2.75a6b91b.chunk.js.map",
+    "index.html": "/music_hero/index.html",
+    "precache-manifest.ae51491477ec6b3c4d6ae12079b3e698.js": "/music_hero/precache-manifest.ae51491477ec6b3c4d6ae12079b3e698.js",
+    "service-worker.js": "/music_hero/service-worker.js",
+    "static/css/main.67d0366d.chunk.css.map": "/music_hero/static/css/main.67d0366d.chunk.css.map",
+    "static/js/2.75a6b91b.chunk.js.LICENSE.txt": "/music_hero/static/js/2.75a6b91b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/music_hero/static/media/ladyGuitar.7130a192.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71ef662b.js",
+    "static/js/2.75a6b91b.chunk.js",
+    "static/css/main.67d0366d.chunk.css",
+    "static/js/main.35889d15.chunk.js"
+  ]
+}
