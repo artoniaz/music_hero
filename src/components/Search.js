@@ -41,11 +41,9 @@ class Search extends Component {
     handleScroll = e => {
         if (window.scrollY < 150 && this.state.miniSearch) {
             this.setState({ miniSearch: false });
-            console.log('duże');
         }
         else if (window.scrollY >= 150 && !this.state.miniSearch) {
             this.setState({ miniSearch: true });
-            console.log('małe');
         }
     }
 
@@ -76,7 +74,7 @@ class Search extends Component {
                     {miniSearch ? null :
                         <div>
                             <p className='searchForm__subTitle'>Type artist's name or track's title</p>
-                            <input className='searchForm__searchInput' type="text" placeholder="Leonard Cohen or Hallelujah" onChange={this.handleUserInput} value={this.state.userInput} />
+                            <input className='searchForm__searchInput' type="text" placeholder="e.g. Leonard Cohen or Hallelujah" onChange={this.handleUserInput} value={this.state.userInput} />
                             <button type='submit' className='searchForm__button' disabled={(this.state.userInput && this.state.tabValue) ? false : true}>search</button>
                         </div>}
                 </form>
