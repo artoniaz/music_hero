@@ -19,7 +19,7 @@ const Results = props => {
     });
 
     if (tabValue !== '' && data.length > 0) {
-        message = <h1 className='results__title'>You are looking for {userInput}</h1>;
+        message = <h1 className='results__title'>You are looking for <span className='results__title--userInput'>{userInput}</span></h1>;
     } else if (tabValue === '' && data.length > 0) {
         message = <p className='results__title'>You are looking for {userInput} but you haven't choosen any tab type. Please click on your preferd tab type to select it.</p>;
     }

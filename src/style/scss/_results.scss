@@ -3,6 +3,10 @@
 
     .results__title {
         padding-bottom: 10px;
+
+        .results__title--userInput {
+            color: $bright-color;
+        }
     }
 
     .results__primaryTitle {
@@ -40,6 +44,7 @@
 @media (min-width: 600px) and (max-height: 499px) {
     .results {
         padding-bottom: 40px;
+
         .resutls__img {
             display: none;
         }

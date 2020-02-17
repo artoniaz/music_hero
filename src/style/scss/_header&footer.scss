@@ -9,6 +9,12 @@
     font-family: 'Permanent Marker', cursive;
 }
 
+.header {
+    .header__title {
+        cursor: pointer;
+    }
+}
+
 .footer {
     position: fixed;
     top: calc(100vh - 60px);
